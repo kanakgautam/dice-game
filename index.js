@@ -23,12 +23,16 @@ var n1=0;
 var n2=0;
 
 $("#rollButton1").click(function(){
+    var audio = new Audio("dice.mp3");
+    audio.play();
     $("#score1").html(gen1());
     $("#p1").text("Player 1");
     $("#p2").text("-> Player 2");
 });
 
 $("#rollButton2").click(function(){
+    var audio = new Audio("dice.mp3");
+    audio.play();
     $("#score2").html(gen2());
     $("#p1").text("-> Player 1");
     $("#p2").text("Player 2");
